@@ -1,0 +1,52 @@
+<mat-expansion-panel style="margin-top: 20px;">
+    <mat-expansion-panel-header class="row" [collapsedHeight]="'180px'" [expandedHeight]="'190px'">
+        <div class="col-4">
+            <img [src]="'https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072823_960_720.jpg'"
+                [alt]="'please find the name'" style="height: 80%; width: 80%;">
+        </div>
+        <div class="col-8 data">
+            <div class="row">
+                <div class="col-3 header">
+                    Name:
+                </div>
+                <div class="col-9">
+                    {{item.name}}
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3 header">
+                    Offer%:
+                </div>
+                <div class="col-9">
+                    {{item.offer}}
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3 header">
+                    Cost:
+                </div>
+                <div class="col-9">
+                    {{item.cost}}
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3 header">
+                    Final Price:
+                </div>
+                <div class="col-9">
+                    {{item.finalPrice}}
+                </div>
+            </div>
+
+        </div>
+    </mat-expansion-panel-header>
+<h3>Description:</h3>
+<p>Please find this is the most useful product you can buy in your whole life please go for it trust me. </p>
+<mat-action-row>
+    <button mat-button color="warn" (click)="decrement()"><i class="fa fa-minus-circle fa-2x"
+            aria-hidden="true"></i></button>
+    <mat-chip class="chip" color="accent" selected>{{count}}</mat-chip>
+    <button mat-button color="primary" (click)="increment()"><i class="fa fa-plus-square fa-2x"
+            aria-hidden="true"></i></button>
+</mat-action-row>
+</mat-expansion-panel>

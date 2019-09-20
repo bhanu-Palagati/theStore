@@ -1,0 +1,14 @@
+.data {
+    margin: auto;
+}
+.header {
+    font-weight: bold;
+}
+.chip {
+
+    padding: 15px;
+    border-radius: 50%;
+}
+.topPad {
+    padding-top: 10px;
+}
